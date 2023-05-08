@@ -1,5 +1,5 @@
 <script>
-  import 'normalize.css'
+  // import 'normalize.css'
   import '../global.scss'
 </script>
 

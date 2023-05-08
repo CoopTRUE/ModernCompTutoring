@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Close and Open';
+  src: url('/fonts/CloseAndOpen-rX78.ttf')
+}
+
 *,
 *::before,
 *::after {
@@ -8,9 +13,11 @@
 }
 
 html {
-  color-scheme: light;
+  color-scheme: black;
 }
 
 body {
   min-height: 100vh;
+  background: black;
+  color: white;
 }

@@ -1,4 +1,6 @@
 <script>
+  import Hero from './Hero.svelte'
+  import Matrix from './Matrix.svelte'
 </script>
 
 <svelte:head>
@@ -10,11 +12,9 @@
 </svelte:head>
 
 <main>
-  <h1>hi</h1>
+  <Hero />
 </main>
+<Matrix />
 
 <style lang="scss">
-  h1 {
-    color: green;
-  }
 </style>
