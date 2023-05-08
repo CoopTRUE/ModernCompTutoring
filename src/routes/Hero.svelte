@@ -30,11 +30,11 @@
       }, typingSpeed * i)
     }
     await new Promise((resolve) => setTimeout(resolve, typingSpeed * newText.length))
-    await new Promise((resolve) => setTimeout(resolve, 2500))
+    await new Promise((resolve) => setTimeout(resolve, 3000))
   }
 
   onMount(async () => {
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    await new Promise((resolve) => setTimeout(resolve, 2000))
     while (true) {
       await typeNextText()
     }
