@@ -3,6 +3,9 @@
   src: url('/fonts/CloseAndOpen-rX78.ttf')
 }
 
+// add inter font from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -20,4 +23,5 @@ body {
   min-height: 100vh;
   background: black;
   color: white;
+  font-family: 'Inter', sans-serif;
 }

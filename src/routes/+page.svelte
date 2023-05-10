@@ -1,6 +1,8 @@
 <script>
   import Hero from './Hero.svelte'
-  import Matrix from './Matrix.svelte'
+  import Matrix from '$lib/components/Matrix.svelte'
+  import Navbar from '$lib/components/Navbar.svelte'
+  import About from './About.svelte'
 </script>
 
 <svelte:head>
@@ -11,8 +13,10 @@
   />
 </svelte:head>
 
+<Navbar />
 <main>
   <Hero />
+  <About />
 </main>
 <Matrix />
 

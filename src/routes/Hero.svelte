@@ -41,6 +41,7 @@
   })
 </script>
 
+<div class="anchor" id="hero" />
 <h1 bind:this={textElement}>Modern Comp Tutoring</h1>
 
 <style lang="scss">
