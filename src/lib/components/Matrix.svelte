@@ -25,7 +25,7 @@
       }
     }
   }
-  onMount(async () => {
+  onMount(() => {
     const interval = setInterval(draw, 30)
     return () => clearInterval(interval)
   })
