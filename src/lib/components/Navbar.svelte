@@ -11,6 +11,7 @@
     <ul>
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
     </ul>
   </nav>
 </header>
@@ -57,6 +58,7 @@
       color: white;
       font-family: 'Close and Open';
       font-size: min(1.5rem, 6vw);
+      text-decoration: underline;
     }
   }
 </style>

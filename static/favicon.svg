@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <defs>
+        <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#4CAF50; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#8BC34A; stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Simplified 'M' -->
+    <path d="M 100 400 V 100 H 200 V 300 H 300 V 100 H 400 V 400" fill="url(#greenGradient)" stroke="black" stroke-width="4"/>
+</svg>

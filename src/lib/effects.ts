@@ -14,15 +14,16 @@ export function typing(node: HTMLElement, params: Params) {
   let textIndex = 0
   async function type() {
     const newText = texts[textIndex % texts.length]
-    const typingDuration = texts[textIndex % texts.length].length * typingSpeed
-    for (let index = 0; index < texts[textIndex].length; index++) {
+    const newTextLength = newText.length
+    const typingDuration = newTextLength * typingSpeed
+    for (let index = 0; index < newTextLength; index++) {
       setTimeout(() => {
         node.textContent = newText.slice(0, index + 1)
       }, typingSpeed * index)
     }
     await wait(typingDuration)
     await wait(pauseDuration)
-    for (let index = texts[textIndex].length; index > 0; index--) {
+    for (let index = newTextLength; index > 0; index--) {
       setTimeout(() => {
         node.textContent = newText.slice(0, index - 1)
       }, typingDuration - typingSpeed * index)

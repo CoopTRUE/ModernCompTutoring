@@ -1,10 +1,7 @@
 @font-face {
   font-family: 'Close and Open';
-  src: url('/fonts/CloseAndOpen-rX78.ttf')
+  src: url('/fonts/CloseAndOpen-rX78.ttf');
 }
-
-// add inter font from google fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 *,
 *::before,
@@ -17,13 +14,19 @@
 
 html {
   color-scheme: black;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   background: black;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: system-ui;
+}
+
+section {
+  padding: 5rem;
+  backdrop-filter: blur(2px);
 }
 
 .anchor {

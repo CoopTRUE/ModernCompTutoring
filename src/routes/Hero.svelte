@@ -18,8 +18,7 @@
   p {
     font-family: 'Close and Open';
     font-size: 4rem;
-    backdrop-filter: blur(2px);
-    padding: 5rem;
+    padding: 5rem 0 5rem 5rem;
     // blinking cursor
     &::after {
       content: '_';

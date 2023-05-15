@@ -3,6 +3,7 @@
   import Matrix from '$lib/components/Matrix.svelte'
   import Navbar from '$lib/components/Navbar.svelte'
   import About from './About.svelte'
+  import Services from './Services.svelte'
 
   let navHeight: number
 </script>
@@ -19,6 +20,7 @@
 <main style:margin-top="{navHeight}px">
   <Hero />
   <About />
+  <Services />
 </main>
 <Matrix />
 
