@@ -1,5 +1,4 @@
-<section>
-  <div class="anchor" id="about" />
+<section id="about">
   <h2>What is this?</h2>
   <p>
     ModernCompTutoring is a service providing tutoring and mentoring to people of all ages. We
@@ -13,6 +12,6 @@
     font-size: 2rem;
   }
   p {
-    width: 70ch;
+    width: min(70ch, 100%);
   }
 </style>

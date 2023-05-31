@@ -1,9 +1,8 @@
-<div class="anchor" id="services" />
-<section>
+<section id="services">
   <h2>Services</h2>
   <p>Our services include:</p>
   <ul class="services">
-    <li class="tutoring">
+    <li class="service tutoring">
       <h3>Tutoring and Mentoring</h3>
       <p>
         We offer tutoring and mentoring in a variety of programming languages and other subjects:
@@ -17,7 +16,7 @@
         <li>Svelte</li>
       </ul>
     </li>
-    <li class="packages">
+    <li class="service packages">
       <h3>Packages</h3>
       <p>We offer packages for people who want to learn a general subject like web development</p>
       <ul>
@@ -72,12 +71,12 @@
     width: 70ch;
   }
   .services {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-direction: row;
     gap: 1rem;
   }
 
-  .services > li {
+  .service {
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 0.5rem;

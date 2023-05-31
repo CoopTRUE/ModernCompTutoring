@@ -11,14 +11,14 @@
   ]
 </script>
 
-<div class="anchor" id="hero" />
-<p use:typing={{ texts: texts, typingSpeed: 40, pauseDuration: 2000 }} class="typing" />
+<section id="hero">
+  <p use:typing={{ texts: texts, typingSpeed: 40, pauseDuration: 2000 }} class="typing" />
+</section>
 
 <style lang="scss">
   p {
     font-family: 'Close and Open';
     font-size: 4rem;
-    padding: 5rem 0 5rem 5rem;
     // blinking cursor
     &::after {
       content: '_';
