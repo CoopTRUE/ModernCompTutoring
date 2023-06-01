@@ -1,9 +1,12 @@
 <section id="services">
-  <h2>Services</h2>
-  <p>Our services include:</p>
+  <div class="info">
+    <h2>Services</h2>
+    <p>Our services include:</p>
+  </div>
+
   <ul class="services">
-    <li class="service tutoring">
-      <h3>Tutoring and Mentoring</h3>
+    <li class="service">
+      <h3>Individual Tutoring</h3>
       <p>
         We offer tutoring and mentoring in a variety of programming languages and other subjects:
       </p>
@@ -16,47 +19,39 @@
         <li>Svelte</li>
       </ul>
     </li>
-    <li class="service packages">
-      <h3>Packages</h3>
-      <p>We offer packages for people who want to learn a general subject like web development</p>
+    <li class="service package">
+      <h3>Basic Web Development Package</h3>
+      <p>This package will teach you all you need to know to get started with web development.</p>
       <ul>
-        <li>
-          <h4>Basic Web Development</h4>
-          <p>
-            This package will teach you all you need to know to get started with web development.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </li>
-        <li>
-          <h4>Intermediate Web Development</h4>
-          <p>
-            This package is for people who already know the basics of web development and want to
-            create advanced websites with api endpoints and database connections.
-          </p>
-          <ul>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-          </ul>
-        </li>
-        <li>
-          <h4>Advanced Web Development</h4>
-          <p>
-            This package is for people who want to create full stack web applications with modern
-            frontend and backend frameworks.
-          </p>
-          <ul>
-            <li>Svelte</li>
-            <li>Sveltekit</li>
-            <li>Typescript</li>
-            <li>MySQL</li>
-            <li>Prisma</li>
-          </ul>
-        </li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </li>
+    <li class="service package">
+      <h3>Intermediate Web Development Package</h3>
+      <p>
+        This package is for people who already know the basics of web development and want to create
+        advanced websites with api endpoints and database connections.
+      </p>
+      <ul>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+      </ul>
+    </li>
+    <li class="service package">
+      <h3>Advanced Web Development Package</h3>
+      <p>
+        This package is for people who want to create full stack web applications with modern
+        frontend and backend frameworks.
+      </p>
+      <ul>
+        <li>Svelte</li>
+        <li>Sveltekit</li>
+        <li>Typescript</li>
+        <li>MySQL</li>
+        <li>Prisma</li>
       </ul>
     </li>
   </ul>
@@ -65,55 +60,38 @@
 <style lang="scss">
   #services {
     background: rgba(0, 0, 0, 0.95);
+    padding: 0 3rem;
   }
-  h2 {
-    font-weight: 700;
-    font-size: 2rem;
-  }
-  p {
-    width: 70ch;
+  .info {
+    text-align: center;
+    padding: 2rem 0;
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
   }
   .services {
     display: grid;
-    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
+    list-style: none;
   }
-
   .service {
-    padding: 1rem;
-    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.3rem;
     border-radius: 0.5rem;
-  }
-
-  .services > li > h3 {
-    margin: 0;
-  }
-
-  .services > li > p {
-    margin: 0;
-  }
-
-  .services > li > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .services > li > ul > li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .services > li > ul > li > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .services > li > ul > li > ul > li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    h3 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      li {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 </style>
