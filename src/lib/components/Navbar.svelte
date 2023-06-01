@@ -26,7 +26,7 @@
     justify-content: space-between;
     padding: min(2rem, 4vw) min(3rem, 8vw);
     background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1.2px);
     @media (max-width: 830px) {
       flex-direction: column;
       align-items: center;

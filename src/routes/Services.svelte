@@ -63,6 +63,9 @@
 </section>
 
 <style lang="scss">
+  #services {
+    background: rgba(0, 0, 0, 0.95);
+  }
   h2 {
     font-weight: 700;
     font-size: 2rem;

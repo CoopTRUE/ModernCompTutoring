@@ -12,13 +12,19 @@
 </script>
 
 <section id="hero">
-  <p use:typing={{ texts: texts, typingSpeed: 40, pauseDuration: 2000 }} class="typing" />
+  <p use:typing={{ texts: texts, typingSpeed: 40, pauseDuration: 3000 }} class="typing" />
 </section>
 
 <style lang="scss">
+  #hero {
+    height: clamp(8rem, 70vw, 22rem);
+    display: grid;
+    place-items: center;
+  }
   p {
     font-family: 'Close and Open';
-    font-size: clamp(2.5rem, 10vw, 5rem);
+    font-size: clamp(3rem, 10vw, 5rem);
+    text-align: center;
     // blinking cursor
     &::after {
       content: '_';
@@ -30,6 +36,5 @@
         opacity: 0;
       }
     }
-    transition: text-shadow 1s;
   }
 </style>
