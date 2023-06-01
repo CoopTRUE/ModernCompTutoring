@@ -18,7 +18,7 @@
 <style lang="scss">
   p {
     font-family: 'Close and Open';
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 10vw, 5rem);
     // blinking cursor
     &::after {
       content: '_';
