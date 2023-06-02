@@ -84,7 +84,7 @@
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 1rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px);
     .info {
       margin-bottom: 1.5rem;
       text-align: center;
