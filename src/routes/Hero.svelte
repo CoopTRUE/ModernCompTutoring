@@ -21,7 +21,7 @@
     display: grid;
     place-items: center;
   }
-  p {
+  .typing {
     font-family: 'Close and Open';
     font-size: clamp(3rem, 10vw, 5rem);
     text-align: center;
