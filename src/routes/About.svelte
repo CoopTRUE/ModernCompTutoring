@@ -55,8 +55,8 @@
     }
   }
   .item {
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.25);
     padding: 2rem;
     border-radius: 1rem;
     border: 2px solid rgba(255, 255, 255, 0.2);
