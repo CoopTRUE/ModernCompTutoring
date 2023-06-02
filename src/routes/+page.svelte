@@ -13,7 +13,7 @@
   <title>Modern Comp Tutoring</title>
   <meta
     name="description"
-    content="Modern Comp Tutoring is a tutoring service for computer science students specializing in nearly all major programming languages."
+    content="Unlock your potential with our comprehensive coding courses. Whether you're a beginner looking to explore the basics or an advanced learner seeking to master web development, blockchain or DeFi, we offer tailored learning experiences to meet your goals. Dive into our fun, engaging lessons and start your coding journey today."
   />
 </svelte:head>
 
