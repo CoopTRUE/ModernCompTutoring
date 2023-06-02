@@ -4,6 +4,7 @@
   import Navbar from '$lib/components/Navbar.svelte'
   import About from './About.svelte'
   import Services from './Services.svelte'
+  import Footer from '$lib/components/Footer.svelte'
 
   let navHeight: number
 </script>
@@ -21,6 +22,7 @@
   <Hero />
   <About />
   <Services />
+  <Footer />
 </main>
 <Matrix />
 

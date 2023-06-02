@@ -40,6 +40,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     list-style: none;
+    padding: min(2rem, 6vw);
+    border-radius: 1rem;
     @media (max-width: 1200px) {
       grid-template: repeat(3, 1fr) / 1fr;
       gap: 1rem;
@@ -48,16 +50,29 @@
         text-align: center;
       }
     }
+    @media (max-width: 520px) {
+      max-width: 100%;
+    }
   }
   .item {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
     .title {
       font-weight: 700;
       font-size: 2rem;
       margin-bottom: 1rem;
+      // cool shade of green
+      color: #00ff00;
+    }
+    .description {
+      line-height: 1.5;
     }
   }
 </style>

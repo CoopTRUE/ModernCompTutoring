@@ -4,7 +4,7 @@
     <p class="description">Our services include:</p>
   </div>
   <ul class="services">
-    <li class="service">
+    <li class="service basic-web-dev">
       <h3 class="title">Basic Web Development</h3>
       <h4 class="subtitle">Introduction to Web Development</h4>
       <p class="description">
@@ -13,7 +13,7 @@
         prior knowledge required.
       </p>
     </li>
-    <li class="service">
+    <li class="service intermediate-web-dev">
       <h3 class="title">Intermediate Web Development Package</h3>
       <h4 class="subtitle">Advanced Web Development</h4>
       <p class="description">
@@ -22,16 +22,16 @@
         API endpoints and database connections.
       </p>
     </li>
-    <li class="service">
+    <li class="service advanced-web-dev">
       <h3 class="title">Advanced Web Development Package</h3>
       <h4 class="subtitle">Full Stack Mastery</h4>
       <p class="description">
-        ake your web application skills to the next level with our Full Stack Mastery package.
+        Take your web application skills to the next level with our Full Stack Mastery package.
         You'll get hands-on experience with modern frontend and backend frameworks like Svelte,
         Sveltekit, TypeScript, MySQL, and Prisma.
       </p>
     </li>
-    <li class="service">
+    <li class="service crypto-defi">
       <h3 class="title">Crypto DeFi Package</h3>
       <h4 class="subtitle">Cryptocurrency and DeFi Basics</h4>
       <p class="description">
@@ -40,7 +40,7 @@
         self-controlled yield.
       </p>
     </li>
-    <li class="service">
+    <li class="service crypto-development">
       <h3 class="title">Crypto Development Package</h3>
       <h4 class="subtitle">Blockchain Development Essentials</h4>
       <p class="description">
@@ -49,7 +49,7 @@
         the blockchain using code. A basic understanding of DeFi and cryptocurrency is required.
       </p>
     </li>
-    <li class="service">
+    <li class="service individual-tutoring">
       <h3 class="title">Individual Tutoring Package</h3>
       <h4 class="subtitle">Personalized Learning Experience</h4>
       <p class="description">
@@ -64,51 +64,79 @@
 </section>
 
 <style lang="scss">
+  $colors: (
+    'basic-web-dev': #ff6f69,
+    'intermediate-web-dev': #ffcc5c,
+    'advanced-web-dev': #88d8b0,
+    'crypto-defi': #34eb9b,
+    'crypto-development': #8458b3,
+    'individual-tutoring': #fa7921
+  );
+  @each $class, $color in $colors {
+    .#{$class} {
+      border: 2px solid $color;
+      .title {
+        color: $color;
+      }
+    }
+  }
   section#services {
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
     .info {
-      margin-bottom: 30px;
+      margin-bottom: 1.5rem;
+      text-align: center;
 
       .title {
-        font-size: 2em;
-        color: #333;
-        margin-bottom: 10px;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
       }
-
       .description {
-        font-size: 1.2em;
-        color: #666;
+        font-size: 1.2rem;
       }
     }
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -90px;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      pointer-events: none;
+    }
   }
-  ul.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    list-style: none;
   }
   .service {
-    flex-basis: 45%;
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
 
+    &:hover {
+      transform: scale(1.05);
+    }
     .title {
-      font-size: 1.5em;
-      color: #333;
-      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #ffdd00;
     }
-
     .subtitle {
-      font-size: 1.2em;
-      color: #666;
-      margin-bottom: 10px;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #aaa;
     }
-
     .description {
-      font-size: 1em;
-      color: #333;
+      font-size: 1rem;
       line-height: 1.6;
     }
   }
