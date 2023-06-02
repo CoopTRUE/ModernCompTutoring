@@ -11,7 +11,7 @@
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
     color: #fff;
     text-align: center;
   }
