@@ -62,7 +62,7 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease-in-out;
     &:hover {
-      transform: scale(1.05);
+      // transform: scale(1.05);
     }
     .title {
       font-weight: 700;
