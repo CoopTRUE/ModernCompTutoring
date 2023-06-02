@@ -3,25 +3,26 @@
     <li>
       <h2>Modern Approach to Coding</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iusto atque consequuntur
-        vel est expedita nisi sequi doloremque nemo pariatur accusantium quia hic nulla magni
-        cumque, labore veritatis rem blanditiis.
+        Explore the forefront of technology with our up-to-date and innovative curriculum. Dive into
+        Python, JavaScript, CSS, and HTML, and apply your learning to real-world scenarios. We're
+        not just teaching you how to code; we're preparing you for a future powered by tech.
       </p>
     </li>
     <li>
       <h2>Beginner to Advanced courses</h2>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ducimus tenetur veniam
-        dolore dolor nihil asperiores, eius accusamus commodi quasi excepturi magni fuga, aliquid
-        vero eligendi ipsum blanditiis. Sint, vel?
+        No matter your coding proficiency, we've got you covered. Our courses range from Basic Web
+        Development for beginners to advanced Cryptocurrency and DeFi. We provide comprehensive
+        learning tailored to your skill level, ensuring an enriching experience for all.
       </p>
     </li>
     <li>
       <h2>Fun and Engaging Lessons</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, excepturi est. Sapiente
-        repudiandae magni, facere, esse explicabo voluptates asperiores dicta dolores, debitis vel
-        maxime rem numquam assumenda consequuntur nobis dolorum.
+        Our lessons are interactive, enjoyable, and designed to fuel your passion for technology.
+        Through hands-on projects and collaborative sessions, we offer a learning experience that's
+        as exciting as it is informative. With us, learning code is not just educational, it's
+        engaging and fun.
       </p>
     </li>
   </ul>
