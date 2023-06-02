@@ -90,6 +90,7 @@
       text-align: center;
 
       .title {
+        font-weight: 700;
         font-size: 2rem;
         margin-bottom: 0.5rem;
       }
