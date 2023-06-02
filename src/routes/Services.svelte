@@ -128,7 +128,6 @@
       font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
-      color: #ffdd00;
     }
     .subtitle {
       font-size: 1.2rem;
