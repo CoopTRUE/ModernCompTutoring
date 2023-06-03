@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  svelte-intersection-observer:
+    specifier: ^0.10.0
+    version: 0.10.0
+
 devDependencies:
   '@sveltejs/adapter-vercel':
     specifier: ^2.4.3
@@ -1985,6 +1990,10 @@ packages:
     dependencies:
       svelte: 3.59.0
     dev: true
+
+  /svelte-intersection-observer@0.10.0:
+    resolution: {integrity: sha512-GdOTMSrRpoBciMe+NbocsHOBvqKJ5OiL5H8Jz4mBoDGHba9VOI4oGeXAmMOmh8mi5gq95+0b0DVI+6alcQ7TCA==}
+    dev: false
 
   /svelte-preprocess@5.0.3(postcss-load-config@4.0.1)(postcss@8.4.23)(sass@1.62.1)(svelte@3.59.0)(typescript@5.0.4):
     resolution: {integrity: sha512-GrHF1rusdJVbOZOwgPWtpqmaexkydznKzy5qIC2FabgpFyKN57bjMUUUqPRfbBXK5igiEWn1uO/DXsa2vJ5VHA==}

@@ -83,7 +83,6 @@
   section#services {
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 1rem;
     backdrop-filter: blur(6px);
     .info {
       margin-bottom: 1.5rem;
@@ -92,23 +91,12 @@
       .title {
         font-weight: 700;
         font-size: 2rem;
-        margin-bottom: 0.5rem;
       }
       .description {
         font-size: 1.2rem;
       }
     }
     position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: -90px;
-      left: 0;
-      width: 100%;
-      height: 90px;
-      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-      pointer-events: none;
-    }
   }
   .services {
     display: grid;

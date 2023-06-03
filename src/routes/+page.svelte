@@ -5,6 +5,7 @@
   import About from './About.svelte'
   import Services from './Services.svelte'
   import Footer from '$lib/components/Footer.svelte'
+  import AboutMe from './AboutMe.svelte'
 
   let navHeight: number
 </script>
@@ -21,6 +22,7 @@
 <main style:margin-top="{navHeight}px">
   <Hero />
   <About />
+  <AboutMe />
   <Services />
   <Footer />
 </main>
