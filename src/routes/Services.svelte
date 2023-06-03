@@ -38,6 +38,11 @@
           dive into the basics of CSS, HTML, and JavaScript, and embark on your coding journey with
           no prior knowledge required.
         </p>
+        <a
+          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Basic Web Development Package"
+        >
+          Contact Us
+        </a>
       </li>
       <li class="service intermediate-web-dev">
         <h3 class="title">Intermediate Web Development Package</h3>
@@ -47,6 +52,11 @@
           of Node.js, Express.js, and MongoDB, and learn how to create complex websites complete
           with API endpoints and database connections.
         </p>
+        <a
+          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Intermediate Web Development Package"
+        >
+          Contact Us
+        </a>
       </li>
       <li class="service advanced-web-dev">
         <h3 class="title">Advanced Web Development Package</h3>
@@ -56,6 +66,11 @@
           You'll get hands-on experience with modern frontend and backend frameworks like Svelte,
           Sveltekit, TypeScript, MySQL, and Prisma.
         </p>
+        <a
+          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Advanced Web Development Package"
+        >
+          Contact Us
+        </a>
       </li>
       <li class="service crypto-defi">
         <h3 class="title">Crypto DeFi Package</h3>
@@ -65,6 +80,11 @@
           how tokens and liquidity work, safely interact with smart contracts, and explore ways to
           earn self-controlled yield.
         </p>
+        <a
+          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Crypto DeFi Package"
+        >
+          Contact Us
+        </a>
       </li>
       <li class="service crypto-development">
         <h3 class="title">Crypto Development Package</h3>
@@ -74,6 +94,11 @@
           code on the blockchain. Develop your own decentralized app and learn how to interact with
           the blockchain using code. A basic understanding of DeFi and cryptocurrency is required.
         </p>
+        <a
+          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Crypto Development Package"
+        >
+          Contact Us
+        </a>
       </li>
       <li class="service individual-tutoring">
         <h3 class="title">Individual Tutoring Package</h3>
@@ -85,6 +110,11 @@
           advanced learners looking to refine their skills. Learn, grow, and excel with guidance
           tailored to your unique coding goals.
         </p>
+        <a
+          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Individual Tutoring Package"
+        >
+          Contact Us
+        </a>
       </li>
     </ul>
   </IntersectionObserver>
@@ -153,6 +183,17 @@
     .description {
       font-size: 1rem;
       line-height: 1.6;
+    }
+    a {
+      display: inline-block;
+      margin-inline: auto;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
     }
   }
   @keyframes fly-in-right {

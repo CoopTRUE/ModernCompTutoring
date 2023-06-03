@@ -1,16 +1,22 @@
-interface Params {
-  texts: string[]
-  typingSpeed?: number
-  pauseDuration?: number
-}
-
 async function wait(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-export function typing(node: HTMLElement, params: Params) {
+interface TypingParams {
+  texts: string[]
+  typingSpeed: number
+  pauseDuration: number
+}
+interface SentenceTypingParams {
+  start: boolean
+  typingSpeed: number
+  commaPauseDuration: number
+  periodPauseDuration: number
+}
+
+export function typing(node: HTMLElement, params: TypingParams) {
   let running = true
-  const { texts, typingSpeed = 50, pauseDuration = 1000 } = params
+  const { texts, typingSpeed, pauseDuration } = params
   let textIndex = 0
   async function type() {
     const newText = texts[textIndex % texts.length]
@@ -35,5 +41,27 @@ export function typing(node: HTMLElement, params: Params) {
   type()
   return {
     destroy: () => (running = false)
+  }
+}
+
+export function sentenceTyping(node: HTMLElement, params: SentenceTypingParams) {
+  const { typingSpeed, commaPauseDuration, periodPauseDuration } = params
+  const text = node.textContent?.replace(/\s+/g, ' ') || ''
+  node.style.opacity = '0'
+  async function type() {
+    node.style.opacity = '1'
+    for (let index = 0; index < text.length; index++) {
+      const char = text[index]
+      node.textContent = text.slice(0, index + 1)
+      if (char === ',') await wait(commaPauseDuration)
+      else if (char === '.') await wait(periodPauseDuration)
+      else await wait(typingSpeed)
+    }
+  }
+  return {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    update(_: SentenceTypingParams) {
+      type()
+    }
   }
 }
