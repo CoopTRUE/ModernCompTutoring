@@ -10,13 +10,13 @@
     return isMobile ? 0 : offset
   }
 
-  let nodes: HTMLElement[] = []
+  let nodes: HTMLLIElement[] = []
 </script>
 
 <svelte:window bind:innerWidth />
 <section>
   <ul class="about">
-    <IntersectionObserver element={nodes[0]} let:intersecting>
+    <IntersectionObserver element={nodes[0]} let:intersecting threshold={0.2}>
       <li
         class="item"
         bind:this={nodes[0]}
@@ -32,7 +32,7 @@
         </p>
       </li>
     </IntersectionObserver>
-    <IntersectionObserver element={nodes[1]} let:intersecting>
+    <IntersectionObserver element={nodes[1]} let:intersecting threshold={0.2}>
       <li
         class="item"
         bind:this={nodes[1]}
@@ -48,7 +48,7 @@
         </p>
       </li>
     </IntersectionObserver>
-    <IntersectionObserver element={nodes[2]} let:intersecting>
+    <IntersectionObserver element={nodes[2]} let:intersecting threshold={0.2}>
       <li
         class="item"
         bind:this={nodes[2]}
@@ -69,6 +69,9 @@
 </section>
 
 <style lang="scss">
+  // *:has(:not(.intersecting)) {
+  //   overflow: hidden;
+  // }
   section {
     margin-bottom: 7rem;
   }
@@ -124,9 +127,6 @@
     }
     &:not(.isMobile) {
       transform: translateY(-200px);
-      &:nth-child(2) {
-        transform: translateY(200px);
-      }
       transition: all 0.8s var(--delay);
     }
     &.intersecting {
