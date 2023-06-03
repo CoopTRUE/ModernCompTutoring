@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
   import headshot from '$lib/images/headshot.jpg'
+  import IntersectionObserver from 'svelte-intersection-observer'
+
+  let imageContainer: HTMLElement
 </script>
 
 <section id="about">
@@ -13,9 +16,15 @@
       and help others discover the limitless opportunities in the world of coding.
     </p>
   </div>
-  <div class="image-container">
-    <img class="profile-pic" src={headshot} alt="Cooper" />
-  </div>
+  <IntersectionObserver element={imageContainer} let:intersecting threshold={0.5}>
+    <img
+      class="profile-pic"
+      class:intersecting
+      src={headshot}
+      alt="Cooper"
+      bind:this={imageContainer}
+    />
+  </IntersectionObserver>
 </section>
 
 <style lang="scss">
@@ -31,8 +40,8 @@
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       gap: 1rem;
-      .content,
-      .image-container {
+      place-items: center;
+      .content {
         text-align: center;
       }
     }
@@ -61,11 +70,13 @@
       color: #ddd;
     }
   }
-  .image-container {
-    .profile-pic {
-      height: 400px;
-      border-radius: 10px;
-      border: 5px solid #fff;
+  .profile-pic {
+    height: 400px;
+    border-radius: 10px;
+    border: 0px solid #fff;
+    transition: all 0.5s ease-in-out;
+    &.intersecting {
+      border: 10px solid #fff;
       box-shadow: 0 0 10px white;
     }
   }
