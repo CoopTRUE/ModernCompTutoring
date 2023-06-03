@@ -1,6 +1,6 @@
 <footer>
   <div class="contact">
-    <h3 class="title">Contact Us</h3>
+    <!-- <h3 class="title">Contact Us</h3> -->
     <p class="description">Interested in our services? Have questions? Reach out to us at:</p>
     <a href="mailto:contact@moderncomptutoring.com">contact@moderncomptutoring.com</a>
   </div>
