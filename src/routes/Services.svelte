@@ -154,6 +154,8 @@
       }
     }
     position: relative;
+    width: min(100%, 1500px);
+    margin-inline: auto;
   }
   .services {
     display: grid;
@@ -166,6 +168,9 @@
     background: rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
     transition: transform 0.3s ease-in-out;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 0.5rem;
 
     &:hover {
       // transform: scale(1.05);
@@ -173,11 +178,9 @@
     .title {
       font-size: 1.5rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
     }
     .subtitle {
       font-size: 1.2rem;
-      margin-bottom: 0.5rem;
       color: #aaa;
     }
     .description {
@@ -194,6 +197,19 @@
       color: #000;
       font-weight: 700;
       text-decoration: none;
+      &::after {
+        display: inline-block;
+        // move block to the left
+        margin-left: -1ch;
+        content: '→';
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      &:hover::after,
+      &:focus::after {
+        opacity: 1;
+        padding-left: 1.5ch;
+      }
     }
   }
   @keyframes fly-in-right {

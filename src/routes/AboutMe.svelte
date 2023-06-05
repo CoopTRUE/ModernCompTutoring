@@ -7,7 +7,7 @@
   let imageElem: HTMLElement
 </script>
 
-<IntersectionObserver once element={sectionElem} threshold={0.25} let:intersecting>
+<IntersectionObserver once element={sectionElem} let:intersecting>
   <section id="about" bind:this={sectionElem}>
     <div class="content">
       <h2 class="title">About Me</h2>
@@ -41,14 +41,19 @@
 
 <style lang="scss">
   section {
+    width: min(100%, 1200px);
+    // add glow
+    // box-shadow: 0 0 50px rgba(100, 100, 100, 0.5);
+    border-radius: 10px 10px 0 0;
+    margin-inline: auto;
     display: grid;
     grid-template-columns: auto 400px;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem;
     padding-bottom: 5rem;
     gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
     @media (max-width: 890px) {
       grid-template-columns: 1fr;
       gap: 1rem;
@@ -60,16 +65,16 @@
         width: 80%;
       }
     }
-    &::before {
-      content: '';
-      position: absolute;
-      top: -90px;
-      left: 0;
-      width: 100%;
-      height: 90px;
-      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-      pointer-events: none;
-    }
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: -90px;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 90px;
+    //   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    //   pointer-events: none;
+    // }
   }
   .content {
     text-align: right;
