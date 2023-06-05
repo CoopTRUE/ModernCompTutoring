@@ -15,11 +15,11 @@
     color: #fff;
     text-align: center;
   }
-  .title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
+  // .title {
+  //   font-size: 2rem;
+  //   font-weight: 700;
+  //   margin-bottom: 0.5rem;
+  // }
   .description {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
