@@ -4,7 +4,6 @@
   import '../global.scss'
 
   function startRotate() {
-    console.log('startRotate')
     return setInterval(() => {
       const title = document.title
       document.title = title.slice(1) + title[0]

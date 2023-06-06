@@ -13,7 +13,7 @@
       </p>
     </li>
     <li class="item">
-      <h2 class="title">Beginner to Advanced courses</h2>
+      <h2 class="title">Beginner to Advanced Courses</h2>
       <p class="description">
         No matter your coding proficiency, we've got you covered. Our courses range from Basic Web
         Development for beginners to advanced Cryptocurrency and DeFi. We provide comprehensive
