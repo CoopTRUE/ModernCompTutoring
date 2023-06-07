@@ -3,5 +3,6 @@
   "[svg]": {
     "editor.formatOnSave": false
   },
+  "eslint.validate": ["svelte"],
   "files.eol": "\n" // Keep consistent with .prettierrc
 }

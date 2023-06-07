@@ -3,6 +3,10 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:@typescript-eslint/strict',
+    // 'airbnb-base',
+    // 'airbnb-typescript/base',
     'plugin:svelte/recommended',
     'prettier'
   ],
@@ -11,7 +15,8 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020,
-    extraFileExtensions: ['.svelte']
+    extraFileExtensions: ['.svelte'],
+    project: './tsconfig.json'
   },
   env: {
     browser: true,
@@ -26,5 +31,11 @@ module.exports = {
         parser: '@typescript-eslint/parser'
       }
     }
-  ]
+  ],
+  rules: {
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { argsIgnorePattern: '^_', destructuredArrayIgnorePattern: '^_' }
+    ]
+  }
 }

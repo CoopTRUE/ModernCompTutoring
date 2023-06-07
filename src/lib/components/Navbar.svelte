@@ -1,7 +1,4 @@
 <script lang="ts">
-  import { setContext } from 'svelte'
-  import { writable } from 'svelte/store'
-
   export let navHeight: number
 </script>
 

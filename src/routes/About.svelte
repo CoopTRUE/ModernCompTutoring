@@ -1,5 +1,4 @@
 <script lang="ts">
-  import IntersectionObserver from 'svelte-intersection-observer'
 </script>
 
 <section>

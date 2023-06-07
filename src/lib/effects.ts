@@ -46,7 +46,7 @@ export function typing(node: HTMLElement, params: TypingParams) {
 
 export function sentenceTyping(node: HTMLElement, params: SentenceTypingParams) {
   const { typingSpeed, commaPauseDuration, periodPauseDuration } = params
-  const text = node.textContent?.replace(/\s+/g, ' ') || ''
+  const text = node.textContent?.replace(/\s+/g, ' ') ?? ''
   node.style.opacity = '0'
   async function type() {
     node.style.opacity = '1'

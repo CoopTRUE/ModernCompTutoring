@@ -1,9 +1,5 @@
 <script lang="ts">
-  import IntersectionObserver from 'svelte-intersection-observer'
-
-  let servicesList: HTMLUListElement
-
-  const defaultDelay = 0.1
+  /* const defaultDelay = 0.1
   function itemFly(element: HTMLLIElement, parameters: { index: number; visible: boolean }) {
     const { index } = parameters
     const delay = index * defaultDelay
@@ -20,7 +16,7 @@
         element.style.removeProperty('animation')
       }
     }
-  }
+  } */
 </script>
 
 <section id="services">
@@ -28,96 +24,92 @@
     <h2 class="title">Services</h2>
     <p class="description">Our services include:</p>
   </div>
-  <IntersectionObserver once let:intersecting>
-    <ul class="services" bind:this={servicesList}>
-      <li class="service basic-web-dev">
-        <h3 class="title">Basic Web Development</h3>
-        <h4 class="subtitle">Introduction to Web Development</h4>
-        <p class="description">
-          Discover the fundamentals of creating a website with our comprehensive package. You'll
-          dive into the basics of CSS, HTML, and JavaScript, and embark on your coding journey with
-          no prior knowledge required.
-        </p>
-        <a
-          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Basic Web Development Package"
-        >
-          Contact Us
-        </a>
-      </li>
-      <li class="service intermediate-web-dev">
-        <h3 class="title">Intermediate Web Development Package</h3>
-        <h4 class="subtitle">Advanced Web Development</h4>
-        <p class="description">
-          Expand your web development skills with our advanced course. You'll master the intricacies
-          of Node.js, Express.js, and MongoDB, and learn how to create complex websites complete
-          with API endpoints and database connections.
-        </p>
-        <a
-          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Intermediate Web Development Package"
-        >
-          Contact Us
-        </a>
-      </li>
-      <li class="service advanced-web-dev">
-        <h3 class="title">Advanced Web Development Package</h3>
-        <h4 class="subtitle">Full Stack Mastery</h4>
-        <p class="description">
-          Take your web application skills to the next level with our Full Stack Mastery package.
-          You'll get hands-on experience with modern frontend and backend frameworks like Svelte,
-          Sveltekit, TypeScript, MySQL, and Prisma.
-        </p>
-        <a
-          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Advanced Web Development Package"
-        >
-          Contact Us
-        </a>
-      </li>
-      <li class="service crypto-defi">
-        <h3 class="title">Crypto DeFi Package</h3>
-        <h4 class="subtitle">Cryptocurrency and DeFi Basics</h4>
-        <p class="description">
-          Demystify the world of decentralized finance with our Crypto DeFi Basics package. Learn
-          how tokens and liquidity work, safely interact with smart contracts, and explore ways to
-          earn self-controlled yield.
-        </p>
-        <a
-          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Crypto DeFi Package"
-        >
-          Contact Us
-        </a>
-      </li>
-      <li class="service crypto-development">
-        <h3 class="title">Crypto Development Package</h3>
-        <h4 class="subtitle">Blockchain Development Essentials</h4>
-        <p class="description">
-          Our Blockchain Development Essentials package offers an in-depth understanding of how to
-          code on the blockchain. Develop your own decentralized app and learn how to interact with
-          the blockchain using code. A basic understanding of DeFi and cryptocurrency is required.
-        </p>
-        <a
-          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Crypto Development Package"
-        >
-          Contact Us
-        </a>
-      </li>
-      <li class="service individual-tutoring">
-        <h3 class="title">Individual Tutoring Package</h3>
-        <h4 class="subtitle">Personalized Learning Experience</h4>
-        <p class="description">
-          Embrace a tailor-made journey in coding with our Individual Tutoring Package. You'll
-          receive one-on-one attention, personalized lesson plans, and the flexibility to learn at
-          your own pace. This package caters to all levels, from beginners exploring the basics to
-          advanced learners looking to refine their skills. Learn, grow, and excel with guidance
-          tailored to your unique coding goals.
-        </p>
-        <a
-          href="mailto:contact@moderncomptutoring.com?subject=Interested in the Individual Tutoring Package"
-        >
-          Contact Us
-        </a>
-      </li>
-    </ul>
-  </IntersectionObserver>
+  <ul class="services">
+    <li class="service basic-web-dev">
+      <h3 class="title">Basic Web Development</h3>
+      <h4 class="subtitle">Introduction to Web Development</h4>
+      <p class="description">
+        Discover the fundamentals of creating a website with our comprehensive package. You'll dive
+        into the basics of CSS, HTML, and JavaScript, and embark on your coding journey with no
+        prior knowledge required.
+      </p>
+      <a
+        href="mailto:contact@moderncomptutoring.com?subject=Interested in the Basic Web Development Package"
+      >
+        Contact Us
+      </a>
+    </li>
+    <li class="service intermediate-web-dev">
+      <h3 class="title">Intermediate Web Development Package</h3>
+      <h4 class="subtitle">Advanced Web Development</h4>
+      <p class="description">
+        Expand your web development skills with our advanced course. You'll master the intricacies
+        of Node.js, Express.js, and MongoDB, and learn how to create complex websites complete with
+        API endpoints and database connections.
+      </p>
+      <a
+        href="mailto:contact@moderncomptutoring.com?subject=Interested in the Intermediate Web Development Package"
+      >
+        Contact Us
+      </a>
+    </li>
+    <li class="service advanced-web-dev">
+      <h3 class="title">Advanced Web Development Package</h3>
+      <h4 class="subtitle">Full Stack Mastery</h4>
+      <p class="description">
+        Take your web application skills to the next level with our Full Stack Mastery package.
+        You'll get hands-on experience with modern frontend and backend frameworks like Svelte,
+        Sveltekit, TypeScript, MySQL, and Prisma.
+      </p>
+      <a
+        href="mailto:contact@moderncomptutoring.com?subject=Interested in the Advanced Web Development Package"
+      >
+        Contact Us
+      </a>
+    </li>
+    <li class="service crypto-defi">
+      <h3 class="title">Crypto DeFi Package</h3>
+      <h4 class="subtitle">Cryptocurrency and DeFi Basics</h4>
+      <p class="description">
+        Demystify the world of decentralized finance with our Crypto DeFi Basics package. Learn how
+        tokens and liquidity work, safely interact with smart contracts, and explore ways to earn
+        self-controlled yield.
+      </p>
+      <a href="mailto:contact@moderncomptutoring.com?subject=Interested in the Crypto DeFi Package">
+        Contact Us
+      </a>
+    </li>
+    <li class="service crypto-development">
+      <h3 class="title">Crypto Development Package</h3>
+      <h4 class="subtitle">Blockchain Development Essentials</h4>
+      <p class="description">
+        Our Blockchain Development Essentials package offers an in-depth understanding of how to
+        code on the blockchain. Develop your own decentralized app and learn how to interact with
+        the blockchain using code. A basic understanding of DeFi and cryptocurrency is required.
+      </p>
+      <a
+        href="mailto:contact@moderncomptutoring.com?subject=Interested in the Crypto Development Package"
+      >
+        Contact Us
+      </a>
+    </li>
+    <li class="service individual-tutoring">
+      <h3 class="title">Individual Tutoring Package</h3>
+      <h4 class="subtitle">Personalized Learning Experience</h4>
+      <p class="description">
+        Embrace a tailor-made journey in coding with our Individual Tutoring Package. You'll receive
+        one-on-one attention, personalized lesson plans, and the flexibility to learn at your own
+        pace. This package caters to all levels, from beginners exploring the basics to advanced
+        learners looking to refine their skills. Learn, grow, and excel with guidance tailored to
+        your unique coding goals.
+      </p>
+      <a
+        href="mailto:contact@moderncomptutoring.com?subject=Interested in the Individual Tutoring Package"
+      >
+        Contact Us
+      </a>
+    </li>
+  </ul>
 </section>
 
 <style lang="scss">

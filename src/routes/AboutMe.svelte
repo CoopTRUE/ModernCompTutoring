@@ -33,6 +33,7 @@
         class:intersecting
         src={headshot}
         alt="Cooper"
+        loading="lazy"
         bind:this={imageElem}
       />
     </IntersectionObserver>
@@ -88,7 +89,7 @@
       font-size: 1.2rem;
       line-height: 1.6;
       color: #ddd;
-      text-align: justify;
+      text-align: left;
       &::after {
         content: '_';
         margin-left: 0.2rem;
