@@ -15,7 +15,7 @@
         class="description"
         use:sentenceTyping={{
           start: intersecting,
-          typingSpeed: 40,
+          typingSpeed: 30,
           commaPauseDuration: 200,
           periodPauseDuration: 400
         }}
